@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rose Day Wish</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <div class="particles" aria-hidden="true"></div>
+
+  <main class="stage">
+    <header class="hero">
+      <p class="eyebrow">To my special person</p>
+      <h1>
+        Happy <span>Rose Day</span>
+      </h1>
+      <p class="subtitle">
+        You make my days bloom brighter. Tap the rose to make it bloom and
+        leave a note from my heart to yours.
+      </p>
+    </header>
+
+    <section class="rose-card">
+      <button class="rose" aria-label="Tap to bloom the rose" id="roseButton">
+        <span class="stem"></span>
+        <span class="leaf left"></span>
+        <span class="leaf right"></span>
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+        <span class="petal p6"></span>
+        <span class="petal p7"></span>
+      </button>
+
+      <div class="message">
+        <p class="typing" id="wishText"></p>
+        <button class="cta" id="surpriseButton">Send a shower of petals</button>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h2>Write your wish</h2>
+      <div class="note-box">
+        <textarea id="noteInput" rows="4" placeholder="Type your Rose Day wish here..."></textarea>
+        <div class="note-actions">
+          <button id="saveNote">Save wish</button>
+          <button class="ghost" id="clearNote">Clear</button>
+        </div>
+        <p class="saved" id="savedNote">Your wish will sparkle here 💖</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
